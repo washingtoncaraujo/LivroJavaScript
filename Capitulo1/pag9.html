@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="library.js"></script> <!-- inclui uma bilbioteca de código JavaScript-->
+    </head>
+    <body>
+        <p>This is a paragraph of HTML</p>
+        <script>
+            //E este é um código JavaScript do lado cleinte
+            //literalmente incorporado ao arquivo HTML
+            function moveon(){
+                //Exibe uma caixa de diálogo modal para fazer uma pergunta ao usuário
+                var answer = confirm("Read to move on?");
+                //Se ele clicou no botão "Ok", faz o navegador carregar uma nova página
+                if (answer) window.location = "http://google.com";
+            }
+            //Executa a função definida acima por 1 minuto (60000 milissegundos) a partir de agora.
+            setTimeout(moveon, 60000);
+        </script>
+        <p>Here is more HTML.</p>
+    </body>
+</html>
